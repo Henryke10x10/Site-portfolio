@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.8em;
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(185deg, rgb(17, 15, 17) 70%, rgb(32, 29, 32) 30%);
+    color: #fff;
+}
+
+
+.inicio-projeto {
+    background: #110F11;
+}
+
+//Header 
+.container-projeto {
+    width: 60%;
+
+    padding: 1px;
+    margin: 0 auto;
+
+    header {
+        display: flex;
+        margin-top: 3em;
+        justify-content: space-between;
+
+        .logo {
+            padding: 1em;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        ul {
+            display: flex;
+    
+            li {
+                list-style: none;
+                margin-left: 3em;
+                padding: 1em 0 1em 0;
+    
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: .9em;
+                    display: flex;
+                    flex-direction: column;
+
+                    &::after {
+                        content: '';
+                        width: 90%;
+                        border: thin outset rgba(255, 255, 255, 1);
+                        transform: scaleX(0);
+                        transition: transform 0.3s;
+                        transform-origin: left;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        } 
+    }
+
+    .projeto-a {
+        &::after {
+            content: '';
+            width: 90%;
+            border: thin outset rgba(255, 255, 255, 1);
+            transform: scaleX(1);
+        }
+    }
+
+    .content {
+        margin-top: 7em;
+        font-size: 3em;
+    }
+}
+//Fim Header
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+
+    p {
+        margin-right: 1em;
+        font-size: 1.5em;
+    }
+
+    a {
+
+        img {
+            width: 1.3em;
+            margin: 0 5px;
+            margin-bottom: -10px;
+        }
+        
+    }
+
+    img {
+
+        &:hover {
+            margin-bottom: -5px;
+        }
+    }
+}
+
+.projetos {
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 8em;
+    padding-bottom: 10em;
+
+    text-align: center;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #foto-projeto {
+        border-radius: 15px;
+        padding: 8em 0;
+        margin: 4em 0;
+
+        width: 500px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: .3s;
+
+        box-shadow: 0 0 5px rgba(92, 92, 92, .5);
+
+        &::before {
+            content: 'Ver Projeto completo';
+            width: 100%;
+
+            padding: 5px 0;
+            background: rgb(17, 15, 17);
+            opacity: 0;
+            transform: scaleX(0);
+            transition: .3s;
+        }
+
+        &:hover {
+
+            transition: .3s;
+
+            &::before {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
+        h2 {
+            margin-top: -9999;
+            visibility: hidden;
+            padding: .3em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            margin: auto;
+            visibility: visible;
+            height: 15em;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        div {
+            width: 25em;
+        }
+    }
+
+    .bg-card-1 {
+        background: url(../../img/spider-man.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .bg-card-2 {
+        background: url(../../img/app.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .bg-card-3 {
+        background: url(../../img/lp.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .bg-card-4 {
+        background: url(../../img/bg1.jpg);
+        background-size: cover;
+        background-position-x: center;
+    }
+}
+
+
+
+
+footer {
+    background: #201D20;
+    height: 12em;
+
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+        p {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+}

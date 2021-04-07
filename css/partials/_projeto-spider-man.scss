@@ -1,0 +1,54 @@
+.spider {
+    width: 60%;
+    margin: auto;
+
+
+    .container {
+        margin-top: 10em;
+        margin-bottom: 10em;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                
+                i {
+                    color: rgb(150, 150, 150);
+                }
+            }
+        }
+
+
+        h1 {
+            font-size: 2em;
+            padding: 1em;
+
+            i {
+                color: white;
+                font-size: 1em;
+                margin-left: 5px;
+            }
+        }
+
+        p {
+            width: 90%;
+            padding: 1em;
+        }
+
+        img {
+            max-width: 40em;
+            margin: 1em;
+        }
+
+        video {
+            max-width: 40em;
+            margin: 1em;
+        }
+    }
+}
