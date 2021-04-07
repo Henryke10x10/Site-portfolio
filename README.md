@@ -2,4 +2,4 @@
 
 ### [Portfólio](https://jedson-henrique-portfolio.netlify.app/)
 
-###### Projeto em andamaneto...
+###### Projeto em andamaneto..
