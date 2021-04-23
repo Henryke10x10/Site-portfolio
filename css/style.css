@@ -428,16 +428,21 @@ body {
   transition: .3s;
   -webkit-box-shadow: 0 0 5px rgba(92, 92, 92, 0.5);
           box-shadow: 0 0 5px rgba(92, 92, 92, 0.5);
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
 }
 
 .projetos #foto-projeto::before {
   content: 'Ver Projeto completo';
-  width: 100%;
-  padding: 5px 0;
-  background: #110f11;
+  font-size: .85rem;
+  width: 40%;
+  margin-bottom: 90%;
+  border-radius: 15px;
+  padding: 4px 0;
+  border: thin solid white;
   opacity: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -445,12 +450,21 @@ body {
 .projetos #foto-projeto:hover {
   -webkit-transition: .3s;
   transition: .3s;
+  border: thin solid rgba(77, 5, 5, 0.5);
+  -webkit-filter: drop-shadow(0 0 5px rgba(92, 92, 92, 0.5));
+          filter: drop-shadow(0 0 5px rgba(92, 92, 92, 0.5));
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
+  -webkit-filter: contrast(105%);
+          filter: contrast(105%);
 }
 
 .projetos #foto-projeto:hover::before {
   opacity: 1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .projetos #foto-projeto h2 {
@@ -474,10 +488,6 @@ body {
   visibility: visible;
   height: 15em;
   border-radius: 15px;
-}
-
-.projetos #foto-projeto img:hover {
-  opacity: .8;
 }
 
 .projetos #foto-projeto div {
@@ -817,8 +827,9 @@ form button:hover {
 }
 
 .spider .container h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 1em;
+  font-weight: 400;
 }
 
 .spider .container h1 i {
@@ -835,6 +846,7 @@ form button:hover {
 .spider .container img {
   max-width: 40em;
   margin: 1em;
+  font-weight: 300;
 }
 
 .spider .container video {
